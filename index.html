@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Los Planetas</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0b0c2a;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 20px 10px;
+      font-size: 48px;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px 40px 60px;
+    }
+
+    .card {
+      width: 220px;
+      height: 300px;
+      perspective: 1000px;
+      margin: 20px;
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card-front {
+      background: #1c1f4a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-front img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .card-front h2 {
+      margin-top: 15px;
+      font-size: 22px;
+    }
+
+    .card-back {
+      background: #292d6a;
+      color: #fff;
+      transform: rotateY(180deg);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-back p {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Los Planetas</h1>
+
+  <div class="container">
+
+    <!-- Mercurio -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="MERCURIO.png" alt="Mercurio">
+          <h2>Mercurio</h2>
+        </div>
+        <div class="card-back">
+          <p>Mercurio es el planeta más cercano al Sol y el más pequeño. No tiene atmósfera significativa y sus temperaturas varían enormemente.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venus -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="VENUS.png" alt="Venus">
+          <h2>Venus</h2>
+        </div>
+        <div class="card-back">
+          <p>Venus es similar en tamaño a la Tierra, pero su atmósfera densa de CO₂ provoca un efecto invernadero extremo. Es el planeta más caliente.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tierra -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="TIERRA.png" alt="Tierra">
+          <h2>Tierra</h2>
+        </div>
+        <div class="card-back">
+          <p>La Tierra es el único planeta conocido con vida. Posee agua en estado líquido, una atmósfera rica en oxígeno y una sola luna.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marte -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="MARTE.png" alt="Marte">
+          <h2>Marte</h2>
+        </div>
+        <div class="card-back">
+          <p>Marte es el cuarto planeta. Se le llama el planeta rojo por su color oxidado. Tiene dos lunas y evidencia de agua en el pasado.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Júpiter -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="JUPITER.png" alt="Júpiter">
+          <h2>Júpiter</h2>
+        </div>
+        <div class="card-back">
+          <p>Júpiter es el planeta más grande. Es un gigante gaseoso con una gran mancha roja, que es una tormenta más grande que la Tierra.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Saturno -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="SATURNO.png" alt="Saturno">
+          <h2>Saturno</h2>
+        </div>
+        <div class="card-back">
+          <p>Saturno es famoso por sus impresionantes anillos hechos de hielo y roca. Es un gigante gaseoso con al menos 80 lunas conocidas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Urano -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="URANO.png" alt="Urano">
+          <h2>Urano</h2>
+        </div>
+        <div class="card-back">
+          <p>Urano es un gigante helado. Gira de lado y su color azul verdoso es debido al metano en su atmósfera. Tiene anillos tenues.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neptuno -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="NEPTUNO.png" alt="Neptuno">
+          <h2>Neptuno</h2>
+        </div>
+        <div class="card-back">
+          <p>Neptuno es el planeta más lejano del Sol. Es un gigante helado azul intenso con los vientos más fuertes del sistema solar.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
